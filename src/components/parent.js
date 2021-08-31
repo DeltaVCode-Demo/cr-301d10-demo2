@@ -8,7 +8,7 @@ class Parent extends React.Component {
     super(props);
 
     this.state = {
-      name: 'Keith',
+      name: 'Samantha',
       children: [
         { childName: 'TBD', gentle: true },
         { childName: 'FDD', willful: true },
@@ -19,10 +19,18 @@ class Parent extends React.Component {
   render() {
     return (
       <div>
-        <p>My name is Keith</p>
+        <p>My name is {this.state.name}</p>
         <ol>
-          <li><Child name="TBD" gentle={true} /></li>
-          <li><Child name="FDD" willful={true} /></li>
+          <li>
+            <Child
+              name={this.state.children[0].childName}
+              gentle={this.state.children[0].gentle} />
+          </li>
+          <li>
+            <Child
+              name={this.state.children[1].childName}
+              willful={this.state.children[1].willful} />
+          </li>
         </ol>
       </div>
     )
