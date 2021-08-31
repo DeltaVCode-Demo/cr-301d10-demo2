@@ -21,10 +21,11 @@ class Child extends React.Component {
 
     console.log(this.props);
     return (
-      <strong>
-        {this.props.name} is {adjective}
-        and has {this.state.goldStars} gold stars!
-      </strong>
+      <>
+        <strong>
+          {this.props.name} is {adjective} and has {this.state.goldStars} gold stars!
+        </strong>
+      </>
     );
   }
 }
