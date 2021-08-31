@@ -7,8 +7,8 @@ class Parent extends React.Component {
       <div>
         <p>My name is Keith</p>
         <ol>
-          <li><Child name="TBD" /></li>
-          <li><Child name="FDD" /></li>
+          <li><Child name="TBD" gentle={true} /></li>
+          <li><Child name="FDD" willful={true} /></li>
         </ol>
       </div>
     )
