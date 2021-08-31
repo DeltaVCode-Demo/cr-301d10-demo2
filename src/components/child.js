@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 class Child extends React.Component {
   constructor(props) {
@@ -7,6 +8,12 @@ class Child extends React.Component {
     this.state = {
       goldStars: 0,
     };
+  }
+
+  addGoldStar = () => {
+    this.setState({
+      goldStars: this.state.goldStars + 1,
+    });
   }
 
   render() {
@@ -25,6 +32,7 @@ class Child extends React.Component {
         <strong>
           {this.props.name} is {adjective} and has {this.state.goldStars} gold stars!
         </strong>
+        <div><Button onClick={this.addGoldStar}>+1</Button></div>
       </>
     );
   }
