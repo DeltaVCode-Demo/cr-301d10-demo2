@@ -1,5 +1,6 @@
 import React from 'react';
 import Child from './child';
+import data from '../data/data.json';
 
 class Parent extends React.Component {
   // You have to have a constructor to use state*
@@ -17,6 +18,8 @@ class Parent extends React.Component {
   }
 
   render() {
+    let hornedChild = data[0];
+
     return (
       <div>
         <p>My name is {this.state.name}</p>
@@ -30,6 +33,10 @@ class Parent extends React.Component {
             <Child
               name={this.state.children[1].childName}
               willful={this.state.children[1].willful} />
+          </li>
+          <li>
+            <Child
+              name={hornedChild.title} />
           </li>
         </ol>
       </div>
