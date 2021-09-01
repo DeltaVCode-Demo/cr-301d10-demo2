@@ -1,0 +1,56 @@
+[
+  {
+    "name": "tbd",
+    "gentle": true,
+    "willful": false,
+    "favoriteColor": "yellow",
+    "imgLink": "https://images.unsplash.com/photo-1597023858048-16e0883ef28a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80",
+    "birthYear": "2011"
+  },
+  {
+    "name": "fdd",
+    "gentle": false,
+    "willful": true,
+    "favoriteColor": "aqua",
+    "imgLink": "https://images.unsplash.com/photo-1613299468850-8e9c24f5e224?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "birthYear": "2015"
+  },
+  {
+    "name": "dwight",
+    "gentle": false,
+    "willful": true,
+    "favoriteColor": "green",
+    "imgLink": "https://m.media-amazon.com/images/M/MV5BMTgxNzA4NDY4NF5BMl5BanBnXkFtZTcwNzI2MTY0OQ@@._V1_UY100_CR25,0,100,100_AL_.jpg",
+    "birthYear": "2012"
+  },
+  {
+    "name": "jimbo",
+    "gentle": true,
+    "willful": false,
+    "favoriteColor": "rainbow",
+    "imgLink": "https://m.media-amazon.com/images/M/MV5BMTIxMjg4MzE1NF5BMl5BanBnXkFtZTcwMTg1MDY2MQ@@._V1_UY100_CR25,0,100,100_AL_.jpg",
+    "birthYear": "2003"
+  },
+  {
+    "name": "pam",
+    "gentle": true,
+    "willful": true,
+    "favoriteColor": "red",
+    "imgLink": "https://m.media-amazon.com/images/M/MV5BMTg0NzE3OTU0NF5BMl5BanBnXkFtZTcwNjg1MDY2MQ@@._V1_UY100_CR25,0,100,100_AL_.jpg",
+    "birthYear": "2018"
+  },
+  {
+    "name": "sprinkles",
+    "gentle": false,
+    "willful": false,
+    "imgLink": "https://images.unsplash.com/photo-1606208427954-aa8319c4815e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+    "birthYear": "2016"
+  },
+  {
+    "name": "michael",
+    "gentle": true,
+    "willful": true,
+    "imgLink": "https://m.media-amazon.com/images/M/MV5BMTUyNzE0OTU0MV5BMl5BanBnXkFtZTgwNzEzMjk4MzI@._V1_UY100_CR23,0,100,100_AL_.jpg",
+    "birthYear": "2010"
+  }
+]
