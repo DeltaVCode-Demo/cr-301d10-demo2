@@ -9,6 +9,10 @@ class Child extends React.Component {
     };
   }
 
+  addGoldStarClickHandler = () => {
+    console.log(this.props.name);
+  };
+
   render() {
     let adjective = 'boring';
 
@@ -23,7 +27,7 @@ class Child extends React.Component {
     return (
       <>
         <strong>{this.props.name} is {adjective} and they have {this.state.goldStars} gold stars!</strong>
-        <p><button>+1</button></p>
+        <p><button onClick={this.addGoldStarClickHandler}>+1</button></p>
       </>
     );
   }
