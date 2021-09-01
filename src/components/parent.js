@@ -13,31 +13,27 @@ class Parent extends React.Component {
       children: [
         { childName: 'TBD', gentle: true },
         { childName: 'FDD', willful: true },
+        { childName: 'Bob' }
       ]
     };
   }
 
   render() {
-    let hornedChild = data[0];
-
     return (
       <div>
         <p>My name is {this.state.name}</p>
         <ol>
-          <li>
-            <Child
-              name={this.state.children[0].childName}
-              gentle={this.state.children[0].gentle} />
-          </li>
-          <li>
-            <Child
-              name={this.state.children[1].childName}
-              willful={this.state.children[1].willful} />
-          </li>
-          <li>
-            <Child
-              name={hornedChild.title} />
-          </li>
+          {
+            this.state.children.map(child => (
+              <li>
+                <Child
+                  name={child.childName}
+                  gentle={child.gentle}
+                  willful={child.willful}
+                />
+              </li>
+            ))
+          }
         </ol>
       </div>
     )
