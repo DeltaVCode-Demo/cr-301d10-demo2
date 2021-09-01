@@ -36,6 +36,7 @@ class Child extends React.Component {
       <>
         <strong>{this.props.name} is {adjective} and they have {this.state.goldStars} gold stars!</strong>
         <p><button onClick={this.addGoldStarClickHandler}>+1</button></p>
+        <img src={this.props.imgLink} alt="" />
       </>
     );
   }

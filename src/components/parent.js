@@ -28,6 +28,8 @@ class Parent extends React.Component {
                   name={child.name}
                   gentle={child.gentle}
                   willful={child.willful}
+
+                  {...child}
                 />
               </li>
             ))
