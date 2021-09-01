@@ -1,6 +1,6 @@
 import React from 'react';
 import Child from './child';
-import data from '../data/data.json';
+import kidsData from '../data/kids.json';
 
 class Parent extends React.Component {
   // You have to have a constructor to use state*
@@ -8,36 +8,32 @@ class Parent extends React.Component {
   constructor(props) {
     super(props);
 
+    console.log(kidsData);
+
     this.state = {
       name: 'Samantha',
-      children: [
-        { childName: 'TBD', gentle: true },
-        { childName: 'FDD', willful: true },
-      ]
+      children: kidsData
     };
   }
 
   render() {
-    let hornedChild = data[0];
-
     return (
       <div>
         <p>My name is {this.state.name}</p>
         <ol>
-          <li>
-            <Child
-              name={this.state.children[0].childName}
-              gentle={this.state.children[0].gentle} />
-          </li>
-          <li>
-            <Child
-              name={this.state.children[1].childName}
-              willful={this.state.children[1].willful} />
-          </li>
-          <li>
-            <Child
-              name={hornedChild.title} />
-          </li>
+          {
+            this.state.children.map((child, childIndex) => (
+              <li key={childIndex}>
+                <Child
+                  name={child.name}
+                  gentle={child.gentle}
+                  willful={child.willful}
+
+                  {...child}
+                />
+              </li>
+            ))
+          }
         </ol>
       </div>
     )
