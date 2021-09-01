@@ -13,6 +13,7 @@ class Parent extends React.Component {
       children: [
         { childName: 'TBD', gentle: true },
         { childName: 'FDD', willful: true },
+        { childName: 'Bob' },
         { childName: 'Bob' }
       ]
     };
@@ -24,8 +25,8 @@ class Parent extends React.Component {
         <p>My name is {this.state.name}</p>
         <ol>
           {
-            this.state.children.map(child => (
-              <li>
+            this.state.children.map((child, childIndex) => (
+              <li key={childIndex}>
                 <Child
                   name={child.childName}
                   gentle={child.gentle}
