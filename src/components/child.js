@@ -1,6 +1,14 @@
 import React from 'react';
 
 class Child extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      goldStars: 0,
+    };
+  }
+
   render() {
     let adjective = 'boring';
 
@@ -12,7 +20,12 @@ class Child extends React.Component {
     }
 
     console.log(this.props);
-    return <strong>{this.props.name} is {adjective}</strong>
+    return (
+      <>
+        <strong>{this.props.name} is {adjective} and they have {this.state.goldStars} gold stars!</strong>
+        <p><button>+1</button></p>
+      </>
+    );
   }
 }
 
