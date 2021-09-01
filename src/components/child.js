@@ -10,7 +10,14 @@ class Child extends React.Component {
   }
 
   addGoldStarClickHandler = () => {
-    console.log(this.props.name);
+    // this.state.goldStars++; // NO
+
+    this.setState({
+      goldStars: this.state.goldStars + 1,
+      lastUpdated: new Date(),
+    });
+
+    console.log(this.state);
   };
 
   render() {
@@ -23,7 +30,8 @@ class Child extends React.Component {
       adjective = 'unique';
     }
 
-    console.log(this.props);
+    console.log('props', this.props);
+    console.log('state', this.state);
     return (
       <>
         <strong>{this.props.name} is {adjective} and they have {this.state.goldStars} gold stars!</strong>
